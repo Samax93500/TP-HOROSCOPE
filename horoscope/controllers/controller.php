@@ -12,6 +12,7 @@ switch($action)
            {
              $username=$_REQUEST['username'];
             $password=$_REQUEST['password'];
+            $flag=getConnexion($username,$password);
             if ($connexion[$username]==$password)
             {
               include 'views/choix.php';
